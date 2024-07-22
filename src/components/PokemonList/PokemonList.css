@@ -1,0 +1,11 @@
+.Pokemon-list-wrapper{
+
+}
+.Pokeon-conatiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
