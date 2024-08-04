@@ -4,15 +4,29 @@
     align-items: center;
 } */
 .Pokemon-wraper{
+    flex-basis: 30%;
    border-radius: .25rem;
     margin: 10px;
-    background-color: rgb(213, 137, 22);
-    width: 20%;
-    
+    border: 1px solid black;
+    max-height: 300px;
+    max-width: 300px;
+    background-color: rgb(254, 222, 180);
+}
+.Pokemon-wraper:hover{
+    background-color: burlywood;
+    cursor: pointer;
 
 }
 img{
     
-    height: 10rem;
-    width: 80%;
+    max-height: 50%;
+    min-height: 200px;
+    max-width: 80%;
+    
+}
+.Pokemon-name{
+    letter-spacing: 10px;
+    font-size: large;
+    font-weight: 600;
+    margin: .5rem 1rem 1rem 1rem;
 }
