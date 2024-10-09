@@ -16,7 +16,7 @@ function PokemonList() {
     const [pokemonList, setPokemonList] = useState([])
 
     async function downloadPokemons() {
-        const response = await axios.get(Pokedex_url);
+        const response = await axios.get(Pokedex_url ? Pokedex_url:DEFAULT_URL );
         const PokemonResult = response.data.results;
         setNext(response.data.next);
         setPrev(response.data.previous);
@@ -57,7 +57,7 @@ function PokemonList() {
             </div>
 
             <div className='Pokeon-conatiner'>
-                {pokemonList.map(pokemon => <Pokemon name={pokemon.name} id={pokemon.id} url={pokemon.image} />)}
+                {pokemonList.map(pokemon => <Pokemon name={pokemon.name} key={pokemon.id} id={pokemon.id} url={pokemon.image} />)}
             </div>
 
 
