@@ -1,0 +1,49 @@
+.Wrapper{
+    margin: 2rem auto;
+    width: 300px;
+    padding: .5rem;
+    background-color: rgb(254, 222, 180);
+    border-radius: .5rem;
+   
+}
+
+.Pokemon_Name{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin: .25rem 0;
+    font-weight: 600;
+  
+}
+.Pokemon_Image{
+    width: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type {
+    background-color: rgb(230, 236, 241);  /* Light gray */
+    font-size: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    height: 10px;  /* Reduced height for better UI */
+    padding: 10px 15px;  /* Added padding for better spacing */
+    display: inline-flex;  /* Aligns content horizontally */
+    align-items: center;  /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    font-weight: bold;  /* Makes text stand out */
+    text-transform: capitalize;  /* Ensures type names look better */
+}
+
+.details{
+
+    display: flex;
+    gap: 1rem;
+    padding: .25rem;
+    font-size: 1.15rem;
+}
+.types{
+    padding: .25rem;
+    font-size: 1.15rem;
+}

@@ -1,0 +1,11 @@
+#Search-Pokemon{
+    width: 50%;
+   padding: 1.25rem 1rem;
+   margin: 1rem 0;
+    border-radius: .25rem;
+    border: 1px solid rgb(38, 37, 37);
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+
+}
