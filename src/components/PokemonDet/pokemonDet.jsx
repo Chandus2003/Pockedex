@@ -6,6 +6,7 @@ import { FaHome } from "react-icons/fa";
 
 
 import axios from 'axios'
+import { HiH2 } from 'react-icons/hi2';
 function PokemonDet({pokemonName}) {
 
     const URL = 'https://pokeapi.co/api/v2/pokemon/'
@@ -13,6 +14,7 @@ function PokemonDet({pokemonName}) {
     const [Pokemon, SetPokemon] = useState({});
 
     async function Download_Pokemon() {
+      try{
         const nameOrId = pokemonName || id;
         const response = await axios.get(URL + nameOrId)
         console.log(response);
@@ -26,6 +28,11 @@ function PokemonDet({pokemonName}) {
             image: Pokemon.sprites.other.dream_world.front_default,
 
         })
+      }
+      catch(e){
+        console.log("Error in fetching pokemon")
+        SetPokemon(null);
+      }
 
 
     }
@@ -40,8 +47,13 @@ function PokemonDet({pokemonName}) {
     return (
         <> 
          
-            <div className='Wrapper'>
-            <Link to="/"><FaHome /></Link>
+            
+            
+            {
+                Pokemon ? (
+                <div>
+                    <div className='Wrapper'>
+                    <Link to="/"><FaHome /></Link>
                 <div className='Pokemon_Name'>
                     {Pokemon.name}
                 </div>
@@ -59,7 +71,13 @@ function PokemonDet({pokemonName}) {
                     </h3>
 
                 </div>
-            </div>
+                </div>
+                </div>
+                ) : 
+                ( <h2>Pokeon not found : Try again</h2>)
+            }
+                
+          
         </>
     )
 }

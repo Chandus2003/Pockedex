@@ -3,18 +3,22 @@ import { useState } from 'react';
 import PokemonList from '../PokemonList/PokemonList';
 import Search from '../Search/Search';
 import PokemonDet from '../PokemonDet/pokemonDet'
+import useDebounce from "../../hooks/useDebouncing"; 
+ 
+
 import './Pokedex.css'
 
 function Pokedex(){
 
-    const [searchInput, setSearchInput]= useState('');
-    console.log(searchInput)
+    const [searchTerm, setSearchTerm] = useState("");
+    const debouncedSearchTerm = useDebounce(searchTerm, 500);
+    console.log(setSearchTerm)
     return(
         <div className='Pokedex-Wrapper'>
             <h1>Pockedex </h1>
-            <Search updateSearch={setSearchInput}/>
+            <Search updateSearch={setSearchTerm}/>
             
-           {searchInput? <PokemonDet pokemonName={searchInput}/>: <PokemonList/>}
+           {searchTerm? <PokemonDet pokemonName={debouncedSearchTerm}/>: <PokemonList/>}
         </div>
     )
 }
