@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Pokedex from './components/Pokedex/Pokedex'
-import PokemonDet from './components/PokemonDet/PokemonDet'
+import Pokedex from './components/Pokedex/pokedex'
+import PokemonDet from './components/PokemonDet/pokemonDet'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
