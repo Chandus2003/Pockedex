@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Pokedex from './components/Pokedex/Pokedex'
 import PokemonDet from './components/PokemonDet/PokemonDet'
 import './App.css'
