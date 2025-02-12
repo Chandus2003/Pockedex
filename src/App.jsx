@@ -1,11 +1,11 @@
-import { useState } from 'react'
+
 import Pokedex from './components/Pokedex/pokedex.jsx'
-import PokemonDet from './components/PokemonDet/pokemonDet'
+import PokemonDet from './components/PokemonDet/pokemonDet.jsx'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
    <Routes>
