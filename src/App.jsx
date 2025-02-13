@@ -1,5 +1,5 @@
 
-import Pokedex from './components/Pokedex/pokedex.jsx'
+import Pokedex from './components/Pokedex/pokedex.jsx';
 import PokemonDet from './components/PokemonDet/pokemonDet.jsx'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
