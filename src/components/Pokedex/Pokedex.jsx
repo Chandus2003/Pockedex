@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import PokemonList from '../PokemonList/PokemonList';
 import Search from '../Search/Search';
-import PokemonDet from '../PokemonDet/pokemonDet'
+import PokemonDet from '../PokemonDet/PokemonDet'
 import useDebounce from "../../hooks/useDebouncing"; 
  
 
