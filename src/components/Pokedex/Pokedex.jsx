@@ -1,8 +1,8 @@
 //Css import
 import { useState } from 'react';
 import PokemonList from '../pokemonList/PokemonList';
-import Search from '../Search/Search';
-import PokemonDet from '../pokemonDet/PokemonDet'
+import Search from '../search/Search';
+import PokemonDet from '../PokemonDet/PokemonDet'
 import useDebounce from "../../hooks/useDebouncing"; 
  
 
