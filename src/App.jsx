@@ -1,5 +1,6 @@
 import Pokedex from './components/Pokedex/Pokedex';  
 import PokemonDet from './components/PokemonDet/PokemonDet';
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
