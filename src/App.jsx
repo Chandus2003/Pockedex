@@ -1,6 +1,9 @@
 
-import Pokedex from './components/Pokedex/Pokedex.jsx';  // or '.js' if the file extension is .js
-import PokemonDet from './components/PokemonDet/PokemonDet.jsx';  // or '.js' if the file extension is .js
+import Pokedex from './components/pokedex/Pokedex';  
+import PokemonDet from './components/pokemonDet/PokemonDet';
+  
+
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
