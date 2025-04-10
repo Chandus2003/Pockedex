@@ -1,6 +1,6 @@
 // Css imports
 import './PokemonList.css'
-import Pokemon from '../Pokemon/Pokemon';
+import Pokemon from '../pokemon/Pokemon';
 
 import axios from 'axios';
 import { useEffect, useState } from 'react'
